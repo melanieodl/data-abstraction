@@ -5,13 +5,13 @@ import java.util.Random;
  */
 public class Coin {
 
-    boolean status = true;
+    boolean isCoicFaceUp = true;
 
     /**
      * Simulates the flip of the coin, setting the coin to "heads" or "tails" at random.
      */
     public void flip(){
-        status = new Random().nextBoolean();
+        isCoicFaceUp = new Random().nextBoolean();
     }
 
     /**
@@ -19,6 +19,6 @@ public class Coin {
      * @return status as either "heads" or "tails".
      */
     public String checkStatus(){
-        return status ? "heads" : "tails";
+        return isCoicFaceUp ? "heads" : "tails";
     }
 }
