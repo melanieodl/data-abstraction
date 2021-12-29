@@ -54,13 +54,10 @@ public class Transcript {
     }
 
     /**
-     * Prints the complete this transcript.
-     * Jane Doe: CPSC-210: 3.5, ENGL-201: 4.0, CPSC-110: 3.1,
-     * GPA: 3.533333333333333
+     * Prints the complete transcript
      */
     public void printTranscript(){
         System.out.printf("%s: ", this.getStudentName());
-
         courses.forEach(course -> System.out.printf("%s: %.1f, ", course, getGradeByCourse(course)));
         System.out.println();
         System.out.printf("GPA: %f", this.getGPA());
